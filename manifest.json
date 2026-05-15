@@ -1,0 +1,25 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "icons/nsu-cgpa-16.png",
+         "48": "icons/nsu-cgpa-48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content-script.js" ],
+      "matches": [ "https://rds3.northsouth.edu/students/grade_history*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "NSU CGPA calculator (what-if) for RDS grade history.",
+   "host_permissions": [ "https://rds3.northsouth.edu/students/grade_history*" ],
+   "icons": {
+      "128": "icons/nsu-cgpa-128.png",
+      "16": "icons/nsu-cgpa-16.png",
+      "48": "icons/nsu-cgpa-48.png"
+   },
+   "manifest_version": 3,
+   "name": "NSU CGPA CALCULATOR",
+   "permissions": [ "storage" ],
+   "version": "0.1.2"
+}
